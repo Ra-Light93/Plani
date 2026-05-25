@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DayesCell" rowHeight="48" id="KGk-i7-Jjw" customClass="DayCellModels" customModule="Plani" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="444" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="444" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xgO-z9-Xp6">
+                        <rect key="frame" x="0.0" y="0.0" width="434" height="48"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J2P-Ki-MoS">
+                                <rect key="frame" x="0.0" y="0.0" width="404" height="48"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2h7-Q9-nCl">
+                                        <rect key="frame" x="10" y="0.0" width="394" height="48"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Day 1">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <font key="NSFont" size="80" name="PartyLetPlain"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2h7-Q9-nCl" firstAttribute="top" secondItem="J2P-Ki-MoS" secondAttribute="top" id="WjW-Up-3O5"/>
+                                    <constraint firstItem="2h7-Q9-nCl" firstAttribute="leading" secondItem="J2P-Ki-MoS" secondAttribute="leading" constant="10" id="aOC-1N-9Zj" userLabel="Day 1.leading = leading + 20"/>
+                                    <constraint firstAttribute="trailing" secondItem="2h7-Q9-nCl" secondAttribute="trailing" id="gfG-iw-jlO"/>
+                                    <constraint firstAttribute="bottom" secondItem="2h7-Q9-nCl" secondAttribute="bottom" id="ovM-ha-1hX"/>
+                                </constraints>
+                            </view>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sL8-7Q-fWn">
+                                <rect key="frame" x="369" y="0.0" width="65" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="0Zq-eq-raO"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="IqS-tA-nBF"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="DayDone2" translatesAutoresizingMaskIntoConstraints="NO" id="WwO-iv-Vhb">
+                                <rect key="frame" x="414" y="-65" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="bgY-Gs-I6S"/>
+                                    <constraint firstAttribute="height" constant="20" id="gg8-sG-at5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="WwO-iv-Vhb" firstAttribute="top" secondItem="xgO-z9-Xp6" secondAttribute="top" constant="-65" id="1nl-Sp-dDQ"/>
+                            <constraint firstAttribute="bottom" secondItem="J2P-Ki-MoS" secondAttribute="bottom" id="6hV-RL-nm3"/>
+                            <constraint firstAttribute="trailing" secondItem="sL8-7Q-fWn" secondAttribute="trailing" id="8Zr-Xh-91b"/>
+                            <constraint firstItem="J2P-Ki-MoS" firstAttribute="leading" secondItem="xgO-z9-Xp6" secondAttribute="leading" id="F39-Kx-CSR"/>
+                            <constraint firstAttribute="trailing" secondItem="WwO-iv-Vhb" secondAttribute="trailing" id="YCx-PC-Sii"/>
+                            <constraint firstItem="J2P-Ki-MoS" firstAttribute="top" secondItem="xgO-z9-Xp6" secondAttribute="top" id="nMO-Ho-ZWi"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xgO-z9-Xp6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="FIb-nv-6Tn"/>
+                    <constraint firstAttribute="trailing" secondItem="xgO-z9-Xp6" secondAttribute="trailing" constant="10" id="TIt-pE-61C"/>
+                    <constraint firstAttribute="bottom" secondItem="xgO-z9-Xp6" secondAttribute="bottom" id="pOw-zl-Wgc"/>
+                    <constraint firstItem="xgO-z9-Xp6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yHI-W0-ODu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="DayImage" destination="sL8-7Q-fWn" id="smG-xM-ZE0"/>
+                <outlet property="DayName" destination="2h7-Q9-nCl" id="RU6-5f-set"/>
+                <outlet property="FinishedImage" destination="WwO-iv-Vhb" id="5CZ-MC-jyh"/>
+            </connections>
+            <point key="canvasLocation" x="-354.19847328244271" y="-251.40845070422537"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DayDone2" width="170.66667175292969" height="170.66667175292969"/>
+    </resources>
+</document>

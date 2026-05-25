@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="RoutineCell" customModule="Plani" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="406" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="406" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vZw-Iv-YOd">
+                        <rect key="frame" x="0.0" y="0.0" width="406" height="55"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AmountOfNewItem" translatesAutoresizingMaskIntoConstraints="NO" id="Zzg-DV-ZmL">
+                                <rect key="frame" x="13" y="0.0" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="CHC-Zi-7MI"/>
+                                    <constraint firstAttribute="height" constant="45" id="RPr-Ya-wNc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wasser 3.4 Liter :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eSj-K5-58u">
+                                <rect key="frame" x="71.000000000000014" y="12.999999999999998" width="160.33333333333337" height="23.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfS-6E-veY">
+                                <rect key="frame" x="238.33333333333337" y="6" width="102" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ETr-J3-0wr"/>
+                                    <constraint firstAttribute="width" constant="102" id="t9S-au-XzR"/>
+                                </constraints>
+                            </pickerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Routine UnCheck" translatesAutoresizingMaskIntoConstraints="NO" id="gB7-zB-Sex">
+                                <rect key="frame" x="346" y="8" width="32" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="EQb-Rt-eGd"/>
+                                    <constraint firstAttribute="width" constant="32" id="e2I-jQ-e7u"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Zzg-DV-ZmL" firstAttribute="leading" secondItem="vZw-Iv-YOd" secondAttribute="leading" constant="13" id="4Vo-OC-mi7"/>
+                            <constraint firstItem="eSj-K5-58u" firstAttribute="leading" secondItem="Zzg-DV-ZmL" secondAttribute="trailing" constant="13" id="7G1-eo-f8e"/>
+                            <constraint firstItem="Zzg-DV-ZmL" firstAttribute="top" secondItem="vZw-Iv-YOd" secondAttribute="top" id="9fC-pe-Hfa"/>
+                            <constraint firstItem="eSj-K5-58u" firstAttribute="top" secondItem="vZw-Iv-YOd" secondAttribute="top" constant="13" id="Ft3-Jy-a4Q"/>
+                            <constraint firstItem="gB7-zB-Sex" firstAttribute="leading" secondItem="cfS-6E-veY" secondAttribute="trailing" constant="5.6699999999999999" id="RSe-Hp-ghx"/>
+                            <constraint firstItem="cfS-6E-veY" firstAttribute="top" secondItem="vZw-Iv-YOd" secondAttribute="top" constant="6" id="fA4-JS-L5p"/>
+                            <constraint firstAttribute="trailing" secondItem="gB7-zB-Sex" secondAttribute="trailing" constant="28" id="rD9-hT-2X2"/>
+                            <constraint firstItem="gB7-zB-Sex" firstAttribute="top" secondItem="vZw-Iv-YOd" secondAttribute="top" constant="8" id="vQt-L8-FC5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vZw-Iv-YOd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="45x-rh-2EZ"/>
+                    <constraint firstAttribute="bottom" secondItem="vZw-Iv-YOd" secondAttribute="bottom" id="7cz-k0-mCx"/>
+                    <constraint firstItem="vZw-Iv-YOd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QdQ-U3-vXx"/>
+                    <constraint firstAttribute="trailing" secondItem="vZw-Iv-YOd" secondAttribute="trailing" id="hox-x7-LOt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="RoutineDoneIMage" destination="gB7-zB-Sex" id="sr6-xT-NIU"/>
+                <outlet property="RoutineImage" destination="Zzg-DV-ZmL" id="bVY-SP-P2n"/>
+                <outlet property="RoutinePicker" destination="cfS-6E-veY" id="UNl-FC-bQb"/>
+                <outlet property="TextInhaltOfRoutine" destination="eSj-K5-58u" id="8ck-3N-G1T"/>
+            </connections>
+            <point key="canvasLocation" x="76.33587786259541" y="-15.140845070422536"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="AmountOfNewItem" width="128" height="128"/>
+        <image name="Routine UnCheck" width="128" height="128"/>
+    </resources>
+</document>
